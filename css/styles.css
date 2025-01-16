@@ -1,0 +1,152 @@
+/*                                                                                        ⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⢟⡋⠋⠁⠀⢀⣬⢟⣿⣿⣿⣿⣟⡻⣾⡿⣿⣿   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣌⠂⢂⣿⣿⢟⡵⠋⠀⠀⠀⠞⣩⣾⠿⢛⡩⣠⣾⢟⣿⢦⡀⠈⠻   */
+/*                                                                                        ⣿⣿⣯⢿⣿⣿⣿⣿⡟⠁⠀⠀⡂⠀⠀⠀⠚⣩⠄⠐⢁⣼⣿⢫⢿⣿⠈⡇⡀⠀   */
+/*                                                                                        ⣿⣿⣿⡏⣿⣿⣿⡟⡠⠀⣼⡿⠁⠀⣠⣴⡿⢁⡴⠁⣼⠟⢁⡏⢸⢸⠀⠀⢡⠀   */
+/*   File:         styles.css                                                             ⣿⣿⢛⠷⢿⣿⡿⣰⠃⠘⢋⠃⣠⣾⣿⣿⢁⣾⠁⢸⠏⡀⣼⡁⠀⠈⠀⠀⠸⡀   */
+/*                                                                                        ⣿⣿⣎⣃⣵⣿⣻⢣⠀⠀⢀⣼⣷⣾⣿⡇⣾⡟⢀⠏⡐⣼⣿⣧⠀⠀⠀⠀⠀⣇   */
+/*   Project:      landing-page                                                           ⣿⣿⣿⣿⣿⣿⢧⢿⠇⠀⠎⢛⡋⠻⣿⣷⣿⣧⠈⣰⣳⣝⢿⣿⡀⠀⠀⠀⢠⢻   */
+/*   Github:       marsdevx                                                               ⣿⣿⣿⣿⡿⠳⣳⠋⠀⠀⣼⠋⠀⠠⢸⣿⣿⣿⣠⣿⣿⣿⣷⣝⡷⠀⢠⠀⢨⢸   */
+/*                                                                                        ⣿⣿⡿⢋⢄⠞⠁⣠⡆⢸⣿⢸⡻⡀⣸⣿⣿⣿⣿⣿⣿⠂⠉⠻⢿⣧⡈⢆⠀⠀   */
+/*   Created:      22:21   16/01/2025                                                     ⣿⣿⠘⠁⢀⣴⣾⡿⢣⣦⢻⣬⣯⣾⣿⣿⣿⣿⣿⣿⢃⣤⣄⠠⣤⠹⣷⡈⠀⠀   */
+/*   Updated:      22:21   16/01/2025                                                     ⠋⠁⠠⠊⠀⠀⠀⠾⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢘⣟⣫⢆⣿⡇⣿⠃⠀⠀   */
+/*                                                                                        ⣀⢂⡔⢶⣿⠟⣫⣾⢿⣪⣟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣩⣵⣿⣿⡵⠁⡀⢀⣶   */
+/*   Path:         ./css/styles.css                                                       ⣿⣾⣿⢆⡗⣾⣯⣷⡿⢟⣯⣾⣻⣞⢿⢿⣿⣿⣿⣿⣿⣿⣿⣟⣉⡤⢗⣵⣿⣿   */
+/*                                                                                        ⣿⣿⢣⣿⣷⠽⣿⣿⣿⣿⢟⣯⣶⢹⣿⠿⡿⠿⠿⠿⢿⣿⣿⠿⣋⠾⢿⣛⣿⣿   */
+/*                                                                                        ⣿⣷⣿⣿⣿⢸⣮⡻⣿⣿⣿⣿⠍⡚⢱⣿⡏⣿⡇⣿⡿⣶⣦⠀⠘⠿⠿⠽⠛⠃   */
+/*                                                                                        ⣿⣿⣿⣹⣾⣼⣿⣿⣷⣭⣭⣵⠇⣥⣾⣿⣿⣿⣿⣿⣿⣿⢣⣾⣿⣿⣿⣿⣷⣥   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⡿⣴⡹⣿⣿⣿⣿⣿⣿⣿⢧⣿⣿⣿⣿⣿⣿⣿⣿   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣭⣽⣿⣿⣯⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿   */
+
+/* Imports */
+
+@import url("header_footer.css");
+@import url("screens.css");
+@import url("anim.css");
+
+
+/* Fonts */
+
+@font-face {
+	font-family: "Neue-Machina-reg";
+	font-style: regular;
+	font-weight: 400;
+	src: url("../fonts/NeueMachina-Regular.otf") format("opentype")
+}
+
+@font-face {
+	font-family: "Neue-Machina-bold";
+	font-style: bold;
+	font-weight: 800;
+	src: url("../fonts/NeueMachina-Ultrabold.otf") format("opentype")
+}
+
+
+/* Basic settings */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Neue-Machina-reg";
+	background-color: #F0F0F0;
+
+	a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#second_screen {
+	scroll-margin-top: 150px;
+}
+
+#third_screen {
+	scroll-margin-top: 50px;
+}
+
+
+/* Container */
+
+.container {
+	max-width: 1512px;
+	margin: 32px auto;
+	padding: 0px 90px;
+}
+
+
+/* Basic elements */
+
+.title {
+	font-weight: 500;
+	font-size: 70px;
+	line-height: 80px;
+	letter-spacing: -4px;
+	color: #151515;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 60px;
+	line-height: auto;
+	letter-spacing: -3px;
+	color: #151515;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 26px;
+	color: #151515;
+}
+
+.item {
+	font-size: 18px;
+	line-height: 24px;
+	color: #151515;
+}
+
+.subtitle-h3 {
+	font-weight: 400;
+	font-size: 28px;
+	letter-spacing: -1.4px;
+	color: #151515;
+}
+
+.button {
+	padding: 14px 20px;
+	background-color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+
+	&:hover {
+		transition: color .5s, background-color .5s, border-color .5s;
+		background-color: transparent;
+		color: #151515;
+		border-color: #151515;
+	}
+}
+
+.black {
+	background-color: #151515;
+	color: #FFFFFF;
+}
+
+.pre-title {
+	font-family: "Neue-Machina-bold";
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	border: #000000, 2px, solid;
+	padding: 6px 20px;
+}

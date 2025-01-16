@@ -1,0 +1,106 @@
+/*                                                                                        ⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⢟⡋⠋⠁⠀⢀⣬⢟⣿⣿⣿⣿⣟⡻⣾⡿⣿⣿   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣌⠂⢂⣿⣿⢟⡵⠋⠀⠀⠀⠞⣩⣾⠿⢛⡩⣠⣾⢟⣿⢦⡀⠈⠻   */
+/*                                                                                        ⣿⣿⣯⢿⣿⣿⣿⣿⡟⠁⠀⠀⡂⠀⠀⠀⠚⣩⠄⠐⢁⣼⣿⢫⢿⣿⠈⡇⡀⠀   */
+/*                                                                                        ⣿⣿⣿⡏⣿⣿⣿⡟⡠⠀⣼⡿⠁⠀⣠⣴⡿⢁⡴⠁⣼⠟⢁⡏⢸⢸⠀⠀⢡⠀   */
+/*   File:         anim.css                                                               ⣿⣿⢛⠷⢿⣿⡿⣰⠃⠘⢋⠃⣠⣾⣿⣿⢁⣾⠁⢸⠏⡀⣼⡁⠀⠈⠀⠀⠸⡀   */
+/*                                                                                        ⣿⣿⣎⣃⣵⣿⣻⢣⠀⠀⢀⣼⣷⣾⣿⡇⣾⡟⢀⠏⡐⣼⣿⣧⠀⠀⠀⠀⠀⣇   */
+/*   Project:      landing-page                                                           ⣿⣿⣿⣿⣿⣿⢧⢿⠇⠀⠎⢛⡋⠻⣿⣷⣿⣧⠈⣰⣳⣝⢿⣿⡀⠀⠀⠀⢠⢻   */
+/*   Github:       marsdevx                                                               ⣿⣿⣿⣿⡿⠳⣳⠋⠀⠀⣼⠋⠀⠠⢸⣿⣿⣿⣠⣿⣿⣿⣷⣝⡷⠀⢠⠀⢨⢸   */
+/*                                                                                        ⣿⣿⡿⢋⢄⠞⠁⣠⡆⢸⣿⢸⡻⡀⣸⣿⣿⣿⣿⣿⣿⠂⠉⠻⢿⣧⡈⢆⠀⠀   */
+/*   Created:      22:21   16/01/2025                                                     ⣿⣿⠘⠁⢀⣴⣾⡿⢣⣦⢻⣬⣯⣾⣿⣿⣿⣿⣿⣿⢃⣤⣄⠠⣤⠹⣷⡈⠀⠀   */
+/*   Updated:      22:21   16/01/2025                                                     ⠋⠁⠠⠊⠀⠀⠀⠾⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢘⣟⣫⢆⣿⡇⣿⠃⠀⠀   */
+/*                                                                                        ⣀⢂⡔⢶⣿⠟⣫⣾⢿⣪⣟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣩⣵⣿⣿⡵⠁⡀⢀⣶   */
+/*   Path:         ./css/anim.css                                                         ⣿⣾⣿⢆⡗⣾⣯⣷⡿⢟⣯⣾⣻⣞⢿⢿⣿⣿⣿⣿⣿⣿⣿⣟⣉⡤⢗⣵⣿⣿   */
+/*                                                                                        ⣿⣿⢣⣿⣷⠽⣿⣿⣿⣿⢟⣯⣶⢹⣿⠿⡿⠿⠿⠿⢿⣿⣿⠿⣋⠾⢿⣛⣿⣿   */
+/*                                                                                        ⣿⣷⣿⣿⣿⢸⣮⡻⣿⣿⣿⣿⠍⡚⢱⣿⡏⣿⡇⣿⡿⣶⣦⠀⠘⠿⠿⠽⠛⠃   */
+/*                                                                                        ⣿⣿⣿⣹⣾⣼⣿⣿⣷⣭⣭⣵⠇⣥⣾⣿⣿⣿⣿⣿⣿⣿⢣⣾⣿⣿⣿⣿⣷⣥   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⡿⣴⡹⣿⣿⣿⣿⣿⣿⣿⢧⣿⣿⣿⣿⣿⣿⣿⣿   */
+/*                                                                                        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣭⣽⣿⣿⣯⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿   */
+
+/* Animations */
+
+.intro {
+	.title {
+		opacity: 0;
+		transform: translateX(-150px);
+		transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out;
+	}
+
+	.title.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.text,
+	.buttons,
+	.intro-imgs {
+		opacity: 0;
+		transform: translateY(150px);
+		transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out;
+	}
+
+	.text.visible,
+	.buttons.visible,
+	.intro-imgs.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.second-screen {
+	.left-side {
+		opacity: 0;
+		transform: translateX(-150px);
+		transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+	}
+
+	.left-side.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.pre-title,
+	.subtitle,
+	.text,
+	.sec-sc-item {
+		opacity: 0;
+		transform: translateY(150px);
+		transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+	}
+
+	.pre-title.visible,
+	.subtitle.visible,
+	.text.visible,
+	.sec-sc-item.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.third-screen {
+	.right-side {
+		opacity: 0;
+		transform: translateX(150px);
+		transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+	}
+
+	.right-side.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.pre-title,
+	.subtitle,
+	.th-sc-block {
+		opacity: 0;
+		transform: translateY(150px);
+		transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+	}
+
+	.pre-title.visible,
+	.subtitle.visible,
+	.th-sc-block.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
