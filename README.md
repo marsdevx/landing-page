@@ -5,10 +5,14 @@
 <br>
 
 <div align="center">
-  <img src="https://custom-icon-badges.demolab.com/github/last-commit/marsdevx/landing-page?logoColor=white&labelColor=2C2C2C&label=Last%20Commit&color=8A2BE2&logo=mark-github" alt="Last Commit">
-  <img src="https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=HTML%20%7C%20CSS%20%7C%20JS&color=D32F2F&logo=file-code" alt="Languages">
-  <img src="https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Design&message=MatteEngine%20The18&color=748ADB&logo=file-media" alt="Design Credit">
-  <img src="https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Purpose&message=Educational&color=F47F42&logo=mortar-board" alt="Educational">
+
+  [![Last Commit](https://custom-icon-badges.demolab.com/github/last-commit/marsdevx/landing-page?logoColor=white&labelColor=2C2C2C&label=Last%20Commit&color=8A2BE2&logo=mark-github)](https://github.com/marsdevx/landing-page/commits/main "Last Commit")
+  [![Languages](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Languages&message=HTML%20%7C%20CSS%20%7C%20JS&color=D32F2F&logo=file-code)](https://github.com/marsdevx/landing-page "Languages")
+  <br>
+  [![Design Credit](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Design&message=MatteEngine%20The18&color=748ADB&logo=file-media)](https://the18.design/freebies/matteengine "Design Credit")
+  [![Educational](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=Purpose&message=Educational&color=F47F42&logo=mortar-board)](https://github.com/marsdevx/landing-page "Educational")
+  [![License](https://custom-icon-badges.demolab.com/static/v1?logoColor=white&labelColor=2C2C2C&label=License&message=MIT&color=00C853&logo=law)](https://github.com/marsdevx/landing-page/blob/main/LICENSE "License")
+
 </div>
 
 ---
